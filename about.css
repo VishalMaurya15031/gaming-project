@@ -1,0 +1,271 @@
+html, body
+{
+  font-family: bahnschrift;
+  height: 100%;
+  width: 100%;
+  color: #eaeaea;
+  background-color: #4e4e50;
+  overflow-x:hidden;
+}
+
+
+.navbar
+{
+  padding: .5rem;
+}
+
+.bg-custom {
+    background-color: #2b2b2b;
+}
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+.social a{
+  font-size: 2.5rem;
+  padding: 3rem; 
+}
+
+.fa-facebook{
+  color: #3b5998;
+}
+
+.fa-twitter{
+  color: #1da1f2;
+}
+
+.fa-instagram{
+  color: #778899;
+}
+
+.fa-tumblr{
+  color: #35465d;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-tumblr:hover
+{
+  color: #d5d5d5;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+
+.ttl{
+  position: absolute;
+  margin-top: -50.5%;
+  margin-left: 3%;
+}
+
+.ttlp{
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.tbs{
+  padding-top: -80.5%;
+}
+
+.padding{
+  padding-bottom: 2rem;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 50.25%;
+}
+
+.iframe-container iframe {
+   border: 5px solid #2b2b2b;
+   height: 41%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 40%;
+   margin-top: 9.8%;
+   margin-left: 35.5%;
+   border-radius: 5px;
+}
+
+.fix{
+  height: 39%;
+  width: 48%;
+}
+
+.display-4
+{
+  font-size: 20px;
+}
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+
+.nav-tabs{
+  background-color:#2b2b2b;
+}
+.tab-content{
+    background-color:#2b2b2b;
+    color: white;
+}
+/*.nav-tabs > li > a{
+  border: medium none;
+}*/
+.nav-tabs  li  a:hover{
+    opacity: 0.1;
+    color: white;
+}
+
+.nav-tabs li a{
+  color: white;
+}
+
+hr 
+{
+  border-top: 2px solid #C7C7C4;
+  width: 99%;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+footer
+{
+  background-color: #282826;
+  color: white;
+}
+
+.cicon{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  padding-right: 3px; 
+}
+
+.com{
+  background-color: #656561;
+  border-radius: 2px;
+  height: 100px;
+}
+
+
+div{
+  word-wrap: break-word;
+}
+
+.tabsmrgn{
+  margin-top: -38%;
+  margin-bottom: 8%;
+}
+
+.tab-content{
+  height: 280px;
+  border-radius: 5px;
+}
+
+.d-flex a{
+  text-decoration: none;
+  color: white;
+}
+
+.d-flex a:hover{
+  color: #eaeaea;
+  opacity: 1;
+}
+
+.tabp{
+  padding-top: 1.5%;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+.social a{
+  font-size: 4em;
+  padding: 2rem; 
+}
+
+}
+@media (max-width: 768px) {
+  
+
+}
+@media (max-width: 576px) {
+  
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

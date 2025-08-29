@@ -1,0 +1,184 @@
+.headtext{
+	position: absolute;
+	color: white;
+	top: 11px;
+	left: 160px;
+}
+
+.cuicon{
+	width: 100%;
+	height: 60px;
+	position: relative;
+	top: -4px;
+}
+
+.culabel{
+	font-size: 30px;
+	position: absolute;
+	margin-left: 153px;
+	top: 30px;
+	color: white;
+}
+.headericon{
+	width: 100%;
+	height: 80px;
+	padding-left: 0px; 
+}
+.hicons{
+	position: absolute;
+	bottom: -280px ;
+	right: 160px;	
+}
+.hsections{
+	position: absolute;
+	color: white;
+	font-size: 18px;
+	top: 40px;
+    margin-left: 550px;
+}
+
+/* .textalign{
+	margin-left: 153px;
+} */
+span{
+	color: red;
+}
+
+
+input{
+	width: 200px;
+	height: 25px;
+	left: 153px;
+	border-radius: 4px;
+	position: relative;
+	top: -30px;
+}
+
+
+textarea{
+	height:70px;
+	margin-left: 350px;
+	border-radius: 5px;
+	position: relative;
+	top: -30px;
+	width: 200px;
+}
+
+form{
+    margin-top: 50px;
+	margin-left: 350px;
+    margin-right: 153px;    
+}
+
+.sp{
+    margin-left: 350px;
+	display: block; 
+	padding-bottom: 5px;
+    color: white;
+}
+
+button{
+	color: white;
+	background-color: black;
+	margin-left: 153px;
+	border-radius: 5px;
+	border-color: black;
+	padding: 7px;
+	top: -25px;
+	position: relative;
+}
+
+section {
+	width: 330px;
+	height: 90px;
+	position: absolute; 
+	right: 350px;
+	top: 290px;
+	border-radius: 15px;
+	padding: 14px;	
+}
+
+.wrap{
+	float: right;
+	width: 200px;
+	height: 220px;
+}
+
+.ftricon{ 
+	width: 100%;
+	height: 80px;
+	padding-left: 0px; 
+	position: absolute;
+	bottom: -320px; 
+ }
+
+ .ftrtext{
+ 	position: absolute;
+	color: white;
+	bottom: -300px;
+	margin-left: 153px;
+ }
+
+.ftricons{
+}
+.ftrsections{
+	position: absolute;
+	bottom: -275px;
+	left: 153px;
+	color: white;
+
+}
+
+hr{ 
+  
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         18px;
+    width:          1px;      
+     background-color: #045482;
+    position: absolute;
+    left: 224px;
+    bottom: -283px;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("form.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.boldSeparator {
+            height: 3px;
+        }
+
+ .separator {
+            height: 1px;
+            background: black;
+            width: 65%;
+            margin-left: 30px;
+             border-bottom: -260px;
+        }
+.h{
+    color: white;
+	text-align: center;
+}
+
+input[type=text], textarea[name=massage]
+    {
+   
+    background:black ;
+        border: none;
+        border-radius: 10px;
+		margin-left: 400px;
+}
+
+input[type=text]:focus, input[type=password]:focus,textarea[name=massage]:focus{
+    background-color: #4E4E50;
+    outline: none;
+}

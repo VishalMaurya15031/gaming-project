@@ -1,0 +1,114 @@
+.header
+{
+	width: 1327px;
+	position: absolute;
+}
+.footer
+{
+	width: 1327px;
+	top: 625px;
+	position: absolute;
+}
+.bod
+{
+	width: 100%;
+}
+
+html, body
+{
+  font-family: bahnschrift;
+  height: 100%;
+  width: 100%;
+  color: #eaeaea;
+  background-color: #4e4e50;
+  overflow-x:hidden;
+}
+
+
+.navbar
+{
+  padding: .5rem;
+}
+
+.bg-custom {
+    background-color: #2b2b2b;
+}
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+
+body
+{
+	font-family: bahnschrift;
+}
+.pos
+{
+	position: absolute;
+	color: lightgrey;
+	font-size: 23px;
+	top: 28px;
+}
+
+.tbod
+{
+	position: absolute;
+	top: 108px;
+	opacity: 0.5%;
+	height: 485px;
+	left: 80px;
+	width: 1200px;
+}
+
+.flabel
+{
+	color: white;
+	left: 150px;
+	padding-bottom: 15px;
+	display: inline-block;
+	padding-top: 15px;
+}
+
+input
+{
+	left: 113px;
+	border-radius: 5px;
+}
+.rd
+{
+	padding-top: 0px; padding-bottom: 5px;
+	left: 450px;
+	font-size: 14px;
+	color: white;
+}
+
+.btn
+{
+	position: absolute;
+	left: -1px;
+	top: 372px;
+}
+
+.btn:hover
+{
+	opacity: 100%;
+}
+.icons
+{
+	position: absolute;
+	top: 638.5px;
+	right: 209px;
+}
+
+span
+{
+	color: red;
+	font-size: 11px;
+	padding-left: 3px;
+	display: inline-block;
+}

@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+html, body
+{
+  font-family: bahnschrift;
+  height: 100%;
+  width: 100%;
+  color: #eaeaea;
+  background-color  : #4e4e50;
+  overflow-x:hidden;
+}
+
+
+.navbar
+{
+  padding: .5rem;
+}
+
+.bg-custom {
+    background-color: #2b2b2b;
+}
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+.carousel-inner img{
+  width:100%;
+  height: 100%;
+}
+
+.padding{
+  padding-bottom: 2rem;
+}
+
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr{
+  border-top: 2px solid #C7C7C4;
+  width: 98%;
+  margin-top: 1rem;
+  margin-bottom: .5rem;  
+}
+
+.social a{
+  font-size: 2.5rem;
+  padding: 3rem; 
+}
+
+.fa-facebook{
+  color: #3b5998;
+}
+
+.fa-twitter{
+  color: #1da1f2;
+}
+
+.fa-instagram{
+  color: #778899;
+}
+
+.fa-tumblr{
+  color: #35465d;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-tumblr:hover
+{
+  color: #d5d5d5;
+}
+
+
+hr 
+{
+  border-top: 2px solid #C7C7C4;
+  width: 99%;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+footer
+{
+  background-color: #282826;
+  color: white;
+}
+
+.faded{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.card:hover .image {
+  opacity: 0.18;
+}
+
+.card:hover .faded {
+  opacity: 0.85;
+  color: #2b2b2b;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 2px solid white;
+}
+
+.txt {
+  padding-bottom: 10px;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+.social a{
+  font-size: 4em;
+  padding: 2rem; 
+}
+
+}
+@media (max-width: 768px) {
+  
+
+}
+@media (max-width: 576px) {
+  
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  font-family: bahnschrift;
+  height: 100%;
+  width: 100%;
+  color: #eaeaea;
+  background-color: #4e4e50;
+  overflow-x: hidden;
+}
+
+.navbar {
+  padding: .5rem;
+}
+
+.bg-custom {
+  background-color: #2b2b2b;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #C7C7C4;
+  width: 98%;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.social a {
+  font-size: 2.5rem;
+  padding: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #778899;
+}
+
+.fa-tumblr {
+  color: #35465d;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-tumblr:hover {
+  color: #d5d5d5;
+}
+
+hr {
+  border-top: 2px solid #C7C7C4;
+  width: 99%;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+footer {
+  background-color: #282826;
+  color: white;
+}
+
+.faded {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .image {
+  opacity: 0.18;
+}
+
+.card:hover .faded {
+  opacity: 0.85;
+  color: #2b2b2b;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 2px solid white;
+}
+
+.txt {
+  padding-bottom: 10px;
+}
+
+/*--- Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Add responsive styles if needed */
+}
+@media (max-width: 576px) {
+  /* Add responsive styles if needed */
+}
+
+/*--- Firefox Bug Fix --*/
+.carousel-item {
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

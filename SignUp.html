@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<img class="header" src="header_icon.jpg">
+		<label class="pos" style="left: 120px;">Noob2Pro</label>
+		<a href="Home.html"><label class="pos" style="right: 200px; font-size:19px; ">Home</label></a>
+		<label class="pos" style="right: 120px; font-size:19px; ">SignIn</label>
+	</div>
+	<div>
+		<img class="bod" src="body_icon.jpg">
+		<img class="tbod" src="bodybg_icon.jpg">
+		<label class="pos" style="left: 120px; font-size: 21px; top: 120px;">SignUp</label>
+
+		<form style="position: absolute; top: 170px; left:120px;">
+			<label class="flabel" ">Username:</label><br>
+			<input type="text" id="username" name="username" required ><br>
+			<label class="flabel" >Password:</label><br>
+			<input type="password" required id="password" name="password"> <span id="err_password">*The password must be atleast 8 characters.</span> <br>
+			<label class="flabel" >Confrm Password:</label><br>
+			<input type="password" required id="repassword" name="confirmPassword"><span id="err_repassword">*Passwords do not match.</span><br>
+			<label class="flabel" >E-mail:</label><br>
+			<input type="text" required id="email" name="e-mail"><span id="err_email">*E-mail not valid. Use "@".</span> <br>
+			<label class="flabel" >Date of Birth:</label><br>
+			<input type="date" required name="dob"><br>
+		
+
+		<div style="position: absolute; top: 9px; left:520px;">
+			<label class="flabel">Gender:</label><br>
+			<input type="radio"  name="gender" required> <label class="rd"> Male</label>
+			<input type="radio"  name="gender" required><label class="rd">Female</label><br>
+			<label class="flabel" >Address:</label><br>
+			<input type="text" required name="address"><br>
+			<label class="flabel" >Country:</label><br>
+			<input type="text" required name="country"><br>
+			<label class="flabel" >Contact Number:</label><br>
+			<input type="text" required id="contact" name="contact">
+			<span id="err_contact">*Enter a valid Contact Number.</span><br>
+		</div>
+
+		<input class="btn" type="image" src="submit.jpg" border="0" alt="Submit" />
+
+		</form>
+
+		<script type="text/javascript">
+			$(function() 
+			{
+				$("#err_repassword").hide();
+				$("#err_email").hide();
+				$("#err_contact").hide();
+				$("#err_password").hide();
+
+				var err_repassword = false;
+				var err_email = false;
+				var err_contact = false;
+				var err_password = false;
+
+				$("#repassword").focusout(function() 
+				{
+
+					repassval();
+		
+				});
+
+				$("#email").focusout(function() 
+				{
+
+					emailval();
+		
+				});
+
+				$("#contact").focusout(function() 
+				{
+
+					contactval();
+		
+				});
+
+				$("#password").focusout(function() 
+				{
+
+					passval();
+		
+				});
+
+				function repassval() 
+				{
+	
+					var password = $("#password").val();
+					var repassword = $("#repassword").val();
+		
+					if(repassword != password) 
+					{
+						$("#err_repassword").show();
+						err_repassword = true;
+					}
+					else 
+					{
+						$("#err_repassword").hide();
+					}
+				}
+
+				function emailval() 
+				{
+
+					var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+	
+					if(pattern.test($("#email").val())) 
+					{
+						$("#err_email").hide();
+					} 
+					else 
+					{
+						$("#err_email").show();
+						err_email = true;
+					}
+	
+				}
+
+				function contactval()
+				{
+  					var regexPattern = new RegExp(/^[0-9-+]+$/);
+  					var cont = $("#contact").val().length;
+  					if(regexPattern.test($("#contact").val()) && cont == 11)
+  					{
+  						$("#err_contact").hide();
+  					} 
+  					else
+  					{
+  						$("#err_contact").show();
+  						err_contact = true;
+  					}
+				}
+
+				function passval() 
+				{
+	
+					var password = $("#password").val().length;
+		
+					if(password < 8) 
+					{
+						$("#err_password").show();
+						err_password = true;
+					}
+					else 
+					{
+						$("#err_password").hide();
+					}
+				}
+
+			});
+
+		</script>
+
+	</div>
+	<img class="footer" src="ftr_icon.jpg">
+	<a href="https://www.facebook.com/share/179WwAZ2uR/"><img class="icons" src="fb_icon.jpg"></a>
+	<a href="https://x.com/vishalm59591782?s=09"><img class="icons" style="right: 250px;" src="twtr_icon.gif"></a>
+	<a href="https://www.tumblr.com/"><img class="icons" style="right: 290px;" src="tmblr_icon.gif"></a>
+	<a href="https://www.instagram.com/v.ishal_15031?igsh=OGM5NHBjb2QxOW1w"><img class="icons" style="right: 330px;" src="inst_icon.gif"></a>
+</body>
+</html>
